@@ -43,16 +43,23 @@ $(document).ready(function(){
 <button id="message"><h1>check inside</h1></button>`);
     });
     $("#background").on("click", "#message", function(){
-        let messageButtonClicked = false;
-        if (!messageButtonClicked) {
-            messageButtonClicked = true};
-        $("#background").html(`<div class="background2">
-        <button id="message2" onclick="typeText()">message</button>
-        </div>
+        $("#background").html(`
         <div id="absolute">
         <div class="background2 p-3" id="typed-content"></div>
         </div>
+        <script>
+        typeText();
+        </script>
         `);
       });
+    //   $("#background").on("click", "#message", function(){
+    //     $("#background").html(`<div class="background2">
+    //     <button id="message2" onclick="typeText()">message</button>
+    //     </div>
+    //     <div id="absolute">
+    //     <div class="background2 p-3" id="typed-content"></div>
+    //     </div>
+    //     `);
+    //   });
     let background = document.getElementById("background");
 });

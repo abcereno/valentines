@@ -87,7 +87,7 @@
     font-size: 2rem;
     background:  #710c19;;
   }
-body,:not(#typed-content){
+body{
   overflow: hidden;
 }
 #absolute{
@@ -98,6 +98,7 @@ body,:not(#typed-content){
   background:#710c19;
   width: 100%;
   pad: 5px;
+  overflow: auto;
 }
 #message2{
   position: absolute;
@@ -128,6 +129,7 @@ button {
     width: 100%;
     height: 100%;
     background: #710c19;
+    overflow: auto;
     /* background: -moz-linear-gradient(top, #ffa5a5 0%, #ffd3d3 100%);
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa5a5), color-stop(100%,#ffd3d3));
     background: -webkit-linear-gradient(top, #ffa5a5 0%,#ffd3d3 100%);
